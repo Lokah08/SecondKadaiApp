@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17A-iI-7OM">
+                                <rect key="frame" x="111.5" y="144" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xew-Ef-pwe">
+                                <rect key="frame" x="176" y="399" width="62" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUSH"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iky-wX-jaY"/>
+                                    <segue destination="SoN-NA-ckS" kind="show" id="6vl-8i-mVO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npa-BJ-iaG">
+                                <rect key="frame" x="191" y="265" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="npa-BJ-iaG" firstAttribute="top" secondItem="17A-iI-7OM" secondAttribute="bottom" constant="100" id="GOR-Z8-Dgw"/>
+                            <constraint firstItem="xew-Ef-pwe" firstAttribute="top" secondItem="npa-BJ-iaG" secondAttribute="bottom" constant="100" id="fm5-Jk-phk"/>
+                            <constraint firstItem="xew-Ef-pwe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gpY-c6-mxh"/>
+                            <constraint firstItem="17A-iI-7OM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hy8-Vn-iBL"/>
+                            <constraint firstItem="npa-BJ-iaG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spg-2z-k8x"/>
+                            <constraint firstItem="17A-iI-7OM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="vgd-JA-A4W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="npa-BJ-iaG" id="kLT-eo-BY0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+        <!--Hello View Controller-->
+        <scene sceneID="OOG-7z-bm1">
+            <objects>
+                <viewController id="SoN-NA-ckS" customClass="HelloViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RFC-T6-uaV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odt-BE-HbL">
+                                <rect key="frame" x="186" y="100" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp6-e1-hdo">
+                                <rect key="frame" x="176.5" y="221" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="BACK"/>
+                                <connections>
+                                    <segue destination="kia-iR-gJD" kind="unwind" unwindAction="unwind:" id="Vmw-K7-mnR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ueC-9K-Vjk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="odt-BE-HbL" firstAttribute="top" secondItem="ueC-9K-Vjk" secondAttribute="top" constant="100" id="MdD-aZ-vRP"/>
+                            <constraint firstItem="Kp6-e1-hdo" firstAttribute="centerX" secondItem="RFC-T6-uaV" secondAttribute="centerX" id="oqc-bj-Thh"/>
+                            <constraint firstItem="Kp6-e1-hdo" firstAttribute="top" secondItem="odt-BE-HbL" secondAttribute="bottom" constant="100" id="tvC-lf-1q2"/>
+                            <constraint firstItem="odt-BE-HbL" firstAttribute="centerX" secondItem="RFC-T6-uaV" secondAttribute="centerX" id="zEi-0q-8k2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YUO-be-1fR"/>
+                    <connections>
+                        <outlet property="hello" destination="odt-BE-HbL" id="yys-xY-fRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQz-mC-ZJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kia-iR-gJD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
