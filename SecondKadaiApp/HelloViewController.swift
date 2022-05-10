@@ -14,6 +14,7 @@ class HelloViewController: UIViewController {
     
     // 入力された名前を受け取るためのプロパティ（変数）を宣言しておく
     var name:String = ""
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()

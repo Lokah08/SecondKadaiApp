@@ -28,7 +28,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="PUSH"/>
                                 <connections>
-                                    <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iky-wX-jaY"/>
+                                    <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9Z-6a-BGM"/>
                                     <segue destination="SoN-NA-ckS" kind="show" id="6vl-8i-mVO"/>
                                 </connections>
                             </button>
